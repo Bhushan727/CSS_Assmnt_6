@@ -1,0 +1,277 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body{
+   
+   height: 100vh;
+    background-size: cover;
+    background-image:url(sahara_desert.jpg) ;
+}
+
+
+/* style for header part */
+
+.header{
+width: 90%;
+height: 15vh;
+
+margin: auto;
+
+}
+
+.logo{
+
+    width: 60px;
+    height: 60px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+
+ul{
+    float:right;
+    list-style-type:none;
+    
+}
+
+ul li{
+
+    display: inline-block;
+    margin: 20px 20px;
+}
+
+ul li a{
+
+    text-decoration: none;
+    
+    color: white;
+    padding: 5px 15px;
+    border: 1px solid transparent;
+    transition: 0.4s ease;
+}
+
+ul li a:hover{
+
+    letter-spacing: 2px;
+    background-color: aqua;
+}
+
+
+
+
+.menubar{
+
+   width: 30px;
+   height: 30px;
+   float: right;
+   margin: 20px 20px;
+}
+
+
+
+.maincontainer{
+    max-width:90%;
+    height: 80vh;
+   
+    margin: auto;
+
+}
+
+.content
+{
+    display: inline-block;
+   
+    width: 50%;
+    height: 100%;
+    
+    color: #fff;
+}
+
+.conthead{
+    margin-top: 20%;
+    font-size:70px;
+    
+}
+
+.explore{
+
+    font-size: large;
+    border: 1px solid transparent;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 10px 40px;
+}
+
+/* styles for small boxes */
+
+
+.rights{
+    display: inline-block;
+    width: 49%;
+    height: 100%;
+    float: right;
+}
+.gridd{
+   
+    height: 100%;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-gap: 15px;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.box{
+        border: 1px solid grey;
+        border-radius: 8px;
+        width: 150px;
+        height: 150px;
+        overflow:visible;
+        background-size: cover;
+        padding: 15px;
+        font-size:x-small;
+        color: #fff;
+        transition: 0.3s;
+}
+
+#cube1{
+
+    background-image: url(pic-1.png);
+}
+
+#cube2{
+
+    background-image: url(pic-2.png);
+}
+
+#cube3{
+
+    background-image: url(pic-3.png);
+}
+
+#cube4{
+
+    background-image: url(pic-4.png);
+}
+
+.box:hover{
+
+    transform:translatey(-5px);
+}
+
+
+
+
+/* adding media queries */
+
+/* media queries for tablet */
+
+
+@media screen and (min-width:580px) and (max-width:900px)
+{
+
+    body{
+
+        height: 1200PX;
+    }
+    .content{
+        display: block;
+        width: 100%;
+        height: 200px;
+       
+
+    }
+    .conthead{
+        font-size: 40px;
+        margin-top: 5%;
+    }
+
+
+    .rights{
+
+        display: block;
+        width: 100%;
+    }
+
+
+    .gridd{
+
+        display: block;
+        
+    }
+
+    .box{
+
+
+        width: 60%;
+        margin: auto;
+        margin-top: 20px;
+        background-size: cover;
+    }
+
+
+}
+
+
+@media screen and (max-width:579px){
+
+        ul li{
+
+            display: block;
+        }
+
+
+        body{
+
+            height: 1200PX;
+        }
+
+        .header{
+
+            height: 150px;
+        }
+
+        .content{
+            display: block;
+            width: 100%;
+            height: auto;
+           
+    
+        }
+        .conthead{
+            font-size: 40px;
+            margin-top: 5%;
+        }
+    
+    
+        .rights{
+    
+            display: block;
+            width: 100%;
+        }
+    
+    
+        .gridd{
+    
+            display: block;
+            
+        }
+    
+        .box{
+    
+    
+            width: 60%;
+            margin: auto;
+            margin-top: 20px;
+            background-size:cover;
+        }
+    
+
+
+
+}
